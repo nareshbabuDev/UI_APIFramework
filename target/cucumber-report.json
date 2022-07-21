@@ -1,0 +1,445 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-21T12:41:29.704Z",
+        "line": 15,
+        "name": "Cite search",
+        "description": "",
+        "id": "zoterobib-ui-validation;cite-search;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7915000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on ZoteroBib Home page",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userOnZoteroBibHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 239000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User searches for Cite",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.searchCite(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Cite_Value"
+                ]
+              },
+              {
+                "cells": [
+                  "J.K. Rowling: Harry Potter"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5374000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User select cite from display list",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.selectCite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 938000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User can see Cite \"J.K. Rowling: Harry Potter\" in Biblography",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"J.K. Rowling: Harry Potter\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userCanSeeAddedCiteInBiblography(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cite"
+          },
+          {
+            "name": "@CiteSearch"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-21T12:41:44.304Z",
+        "line": 28,
+        "name": "Cite Add",
+        "description": "",
+        "id": "zoterobib-ui-validation;cite-add;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 37000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on ZoteroBib Cite Section",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userOnZoteroCiteSection()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1160000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User add Cite through Manual Entry",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.addCite(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Book_Title",
+                  "last_Name",
+                  "first_Name"
+                ]
+              },
+              {
+                "cells": [
+                  "TEST QA",
+                  "TESTER",
+                  "ONE"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User can see Cite \"TEST QA\" in Biblography",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TEST QA\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userCanSeeAddedCiteInBiblography(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cite"
+          },
+          {
+            "name": "@CiteAdd"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-21T12:41:45.554Z",
+        "line": 44,
+        "name": "Cite Update",
+        "description": "",
+        "id": "zoterobib-ui-validation;cite-update;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User is on ZoteroBib Biblography Section",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userOnZoteroBibSection()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User select Cite for Cite Updation",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.selectCite(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Book_Title"
+                ]
+              },
+              {
+                "cells": [
+                  "TEST QA"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 196000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User update Cite through Manual Entry",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.updateCite(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Update_Book_Title"
+                ]
+              },
+              {
+                "cells": [
+                  "QA"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User can see Cite \"QA\" in Biblography",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QA\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userCanSeeAddedCiteInBiblography(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cite"
+          },
+          {
+            "name": "@CiteUpdate"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-21T12:41:45.910Z",
+        "line": 59,
+        "name": "Cite Delete",
+        "description": "",
+        "id": "zoterobib-ui-validation;cite-delete;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User is on ZoteroBib Biblography Section",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userOnZoteroBibSection()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User select Cite for Cite Deletion",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.deleteCite(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Book_Title"
+                ]
+              },
+              {
+                "cells": [
+                  "QA"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User delete Cite through Manual",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.deletionCite(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Book_Title"
+                ]
+              },
+              {
+                "cells": [
+                  "QA"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User can not see Cite \"QA\" in Biblography",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QA\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userCannotSeeAddedCiteInBiblography(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cite"
+          },
+          {
+            "name": "@CiteDelete"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-21T12:41:46.110Z",
+        "line": 62,
+        "name": "To confirm whether the API is up and running",
+        "description": "",
+        "id": "zoterobib-ui-validation;to-confirm-whether-the-api-is-up-and-running",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user has access to endpoint \"/itemTypes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/itemTypes\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userHasAccessToEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3100000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "user makes a request to check the health of Cite service",
+            "match": {
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userMakesARequestToCheckTheHealthOfCiteService()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.ui.stepdefinitions.ZoteroBibUISteps.userShouldGetTheResponseCode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cite"
+          },
+          {
+            "name": "@healthCheck"
+          }
+        ]
+      }
+    ],
+    "name": "ZoteroBib UI Validation",
+    "description": "",
+    "id": "zoterobib-ui-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ZoteroBib.feature",
+    "tags": [
+      {
+        "name": "@Cite",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

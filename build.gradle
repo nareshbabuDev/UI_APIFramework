@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+group 'com.App'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'junit:junit:4.13.2'
+    implementation 'io.cucumber:cucumber-java8:4.2.2'
+    implementation 'io.cucumber:cucumber-junit:4.2.2'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.2.1'
+    implementation 'io.cucumber:cucumber-java:6.9.1'
+    implementation 'io.cucumber:cucumber-core:6.9.1'
+    implementation 'io.cucumber:cucumber-junit:6.9.1'
+    implementation 'io.cucumber:cucumber-picocontainer:6.9.1'
+    implementation 'io.cucumber:cucumber-jvm-deps:1.0.6'
+    implementation 'io.cucumber:gherkin:5.0.0'
+    implementation 'io.rest-assured:rest-assured:3.3.0'
+    implementation 'io.rest-assured:json-schema-validator:3.3.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'org.apache.poi:poi:3.17'
+    implementation 'org.apache.poi:poi-ooxml:3.17'
+    implementation 'org.json:json:20180813'
+    implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.10.8'
+    implementation 'com.github.dzieciou.testing:curl-logger:2.0.1'
+    implementation 'org.slf4j:slf4j-simple:2.0.0-alpha1'
+    implementation 'org.slf4j:slf4j-api:2.0.0-alpha1'
+    implementation 'org.slf4j:slf4j-log4j12:2.0.0-alpha1'
+    implementation 'tech.grasshopper:extentreports-cucumber6-adapter:2.11.1'
+}
+
+test {
+   useJUnit()
+}
+

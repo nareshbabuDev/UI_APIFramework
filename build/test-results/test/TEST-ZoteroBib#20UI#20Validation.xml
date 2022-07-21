@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ZoteroBib UI Validation" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-07-21T12:41:29" hostname="DESKTOP-S7U6A62" time="19.827">
+  <properties/>
+  <testcase name="Cite search" classname="ZoteroBib UI Validation" time="14.901"/>
+  <testcase name="Cite Add" classname="ZoteroBib UI Validation" time="1.252"/>
+  <testcase name="Cite Update" classname="ZoteroBib UI Validation" time="0.356"/>
+  <testcase name="Cite Delete" classname="ZoteroBib UI Validation" time="0.203"/>
+  <testcase name="To confirm whether the API is up and running" classname="ZoteroBib UI Validation" time="3.115"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J providers.
+SLF4J: Found provider [org.slf4j.simple.SimpleServiceProvider@294e5088]
+SLF4J: Found provider [org.slf4j.log4j12.Log4j12ServiceProvider@51972dc7]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual provider is of type [org.slf4j.simple.SimpleServiceProvider@294e5088]
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 103.0.5060.134 (resolved driver for Chrome 103)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\nares\.cache\selenium\chromedriver\win32\103.0.5060.134\chromedriver.exe
+Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 2768
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2022 6:11:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
