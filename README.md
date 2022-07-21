@@ -6,7 +6,7 @@ Performed all CRUD Operation Testing on UI
   -> Delete Cite
 
 Run Project :
-    ./gradlew test
+    gradle test
 
 
 
